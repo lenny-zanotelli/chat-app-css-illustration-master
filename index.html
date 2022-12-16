@@ -1,51 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | [Chat app CSS illustration]</title>
 </head>
+
 <body>
 
-  Samuel Green
-  Available to Walk
+  <main class="container">
 
-  That sounds great. I’d be happy with that.
+    <!--MOBILE CONTENT-->
 
-  Could you send over some pictures of your dog, please?
+    <div class="container__card">
 
-  Here are a few pictures. She’s a happy girl!
+      <h1 class="card__title--name">
+        <img class="card__title--avatar" src="images\avatar.jpg" alt="samuel green">
+        Samuel Green
+        <span class="card__avatar--status">Available to Walk</span>
+      </h1>
 
-  Can you make it?
+      <!--Message discussion -->
 
-  She looks so happy! The time we discussed works. How long shall I take her out for?
+      <section class="card__dicussion">
+        <div class="card__dicussion-text">
+          <p class="card__discussion-text--1">That sounds great. I’d be happy with that.</p>
+          <p class="card__discussion-text--2">Could you send over some pictures of your dog, please?</p>
+          <p class="card__discussion-text--3">
+            <img class="card__discussion-text--3--img" src="images\dog-image-1.jpg" alt="dog1">
+            <img class="card__discussion-text--3--img" src="images\dog-image-2.jpg" alt="dog2">
+            <img class="card__discussion-text--3--img" src="images\dog-image-3.jpg" alt="dog3">
+          </p>
+          <p class="card__discussion-text--4">Here are a few pictures. She’s a happy girl!</p>
+          <p class="card__discussion-text--5">Can you make it?</p>
+          <p class="card__discussion-text--6">She looks so happy! The time we discussed works. How long shall I take her
+            out for?</p>
 
-  30 minute walk
-  $29
+          <!--These are the two input's radio-->
 
-  1 hour walk
-  $49
+          <div class="card__radio">
+            <div class="card__radio1">
+              <input class="radio__input" type="radio" name="cardRadio" id="radio-1">
+              <label for="radio-1" class="card__radio1--body">
+                <span class="radio__label">30 minute walk</span>
+                <span class="radio__price">$29</span>
+              </label>
+            </div>
+            <div class="card__radio2">
+              <input class="radio__input" type="radio" name="cardRadio" id="radio-2">
+              <label for="radio-2" class="card__radio2--body">
+                <span class="radio__label">1 hour walk</span>
+                <span class="radio__price">$49</span>
+              </label>
+            </div>
+          </div>
 
-  Type a message…
+          <!--Text input & submit button-->
 
-  Simple booking
+          <div class="input-group">
+            <label for="input-group" class="input-group__label">
+              <input class="input-group__input--text" type="text" id="input-group" placeholder="Type a message...">
+              <input class="input-group__input--submit" type="submit" value=">">
+            </label>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
 
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="footer__description">
+    <h1 class="footer__description--title">Simple Booking</h1>
+    <p class="footer__description--paragraph">
+      Stay in touch with our dog walkers through the chat interface. This
+      makes it easy to discuss arrangements and
+      make bookings. Once the walk has been completed you can rate walker and book again all through the chat.
+    </p>
+  </footer>
+
 </body>
+
 </html>

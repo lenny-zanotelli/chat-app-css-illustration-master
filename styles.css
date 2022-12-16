@@ -1,0 +1,41 @@
+:root {
+    --pale-violet: hsl(276, 100%, 81%);
+    --moderate-violet: hsl(276, 55%, 52%);
+    --desaturated-dark-violet: hsl(271, 15%, 43%);
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    --dark-grayish-violet: hsl(270, 7%, 64%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+
+}
+
+
+/* .container__card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: -20rem 15rem -5rem -40rem;
+    border-bottom-left-radius: 30rem;
+    border-bottom-right-radius: 30rem;
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    display: block;
+}
+
+.footer__description::after {
+    content: "";
+    position: absolute;
+    background: hsl(290, 43%, 95%);
+    z-index: -1;
+    display: block;
+    inset: 10rem 0rem -40rem 60rem;
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+} */
+
+    
