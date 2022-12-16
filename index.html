@@ -23,56 +23,60 @@
 
     <div class="container__card">
 
-      <h1 class="card__title--name">
-        <img class="card__title--avatar" src="images\avatar.jpg" alt="samuel green">
-        Samuel Green
-        <span class="card__avatar--status">Available to Walk</span>
-      </h1>
+      <div class="card__head">
+        <div class="card__head--notch"></div>
+        <img class="card__head--avatar" src="images\avatar.jpg" alt="samuel green">
+        <div class="card__head--name-status">
+          <h3 class="card__head--name">Samuel Green</h3>
+          <span class="card__head--status">Available to Walk</span>
+        </div>
+        <div class="card__head--optionsbutton"></div>
+      </div>
 
       <!--Message discussion -->
 
-      <section class="card__dicussion">
-        <div class="card__dicussion-text">
-          <p class="card__discussion-text--1">That sounds great. I’d be happy with that.</p>
-          <p class="card__discussion-text--2">Could you send over some pictures of your dog, please?</p>
-          <p class="card__discussion-text--3">
-            <img class="card__discussion-text--3--img" src="images\dog-image-1.jpg" alt="dog1">
-            <img class="card__discussion-text--3--img" src="images\dog-image-2.jpg" alt="dog2">
-            <img class="card__discussion-text--3--img" src="images\dog-image-3.jpg" alt="dog3">
-          </p>
-          <p class="card__discussion-text--4">Here are a few pictures. She’s a happy girl!</p>
-          <p class="card__discussion-text--5">Can you make it?</p>
-          <p class="card__discussion-text--6">She looks so happy! The time we discussed works. How long shall I take her
-            out for?</p>
+      <section class="card__discussion">
+        <p class="card__discussion-text--left">That sounds great. I’d be happy with that.</p>
+        <p class="card__discussion-text--left">Could you send over some pictures of your dog, please?</p>
+        <p class="card__discussion-text--image">
+          <img class="card__discussion-text--img" src="images\dog-image-1.jpg" alt="dog1">
+          <img class="card__discussion-text--img" src="images\dog-image-2.jpg" alt="dog2">
+          <img class="card__discussion-text--img" src="images\dog-image-3.jpg" alt="dog3">
+        </p>
+        <p class="card__discussion-text--right">Here are a few pictures. She’s a happy girl!</p>
+        <p class="card__discussion-text--right">Can you make it?</p>
+        <p class="card__discussion-text--left">She looks so happy! The time we discussed works. How long shall I take
+          her
+          out for?</p>
 
-          <!--These are the two input's radio-->
+        <!--These are the two input's radio-->
 
-          <div class="card__radio">
-            <div class="card__radio1">
-              <input class="radio__input" type="radio" name="cardRadio" id="radio-1">
-              <label for="radio-1" class="card__radio1--body">
-                <span class="radio__label">30 minute walk</span>
-                <span class="radio__price">$29</span>
-              </label>
-            </div>
-            <div class="card__radio2">
-              <input class="radio__input" type="radio" name="cardRadio" id="radio-2">
-              <label for="radio-2" class="card__radio2--body">
-                <span class="radio__label">1 hour walk</span>
-                <span class="radio__price">$49</span>
-              </label>
-            </div>
+        <div class="card__radio">
+          <div class="card__radio1">
+            <input class="radio__input" type="radio" name="cardRadio" id="radio-1">
+            <label for="radio-1" class="card__radio1--body">
+              <span class="radio__label">30 minute walk</span>
+              <span class="radio__price">$29</span>
+            </label>
           </div>
-
-          <!--Text input & submit button-->
-
-          <div class="input-group">
-            <label for="input-group" class="input-group__label">
-              <input class="input-group__input--text" type="text" id="input-group" placeholder="Type a message...">
-              <input class="input-group__input--submit" type="submit" value=">">
+          <div class="card__radio2">
+            <input class="radio__input" type="radio" name="cardRadio" id="radio-2">
+            <label for="radio-2" class="card__radio2--body">
+              <span class="radio__label">1 hour walk</span>
+              <span class="radio__price">$49</span>
             </label>
           </div>
         </div>
+
+        <!--Text input & submit button-->
+
+        <div class="input-group">
+          <label for="input-group" class="input-group__label">
+            <input class="input-group__input--text" type="text" id="input-group" placeholder="Type a message...">
+            <input class="input-group__input--submit" type="submit" value=">">
+          </label>
+        </div>
+
       </section>
     </div>
   </main>
