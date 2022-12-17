@@ -13,8 +13,6 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -22,11 +20,10 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
-- **Bonus**: See the chat interface animate on the initial load
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://chat-app-css-illustration-master-flax.vercel.app/](https://chat-app-css-illustration-master-flax.vercel.app/)
 
 ## My process
 
@@ -36,14 +33,17 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - BEM
+- A little of Grid
 
 ### What I learned
 
+It was my most difficult challenge for me in HTML and CSS.
+I learned a lot about the use of flexboxes, the semantics of HTML tags as well as the pseudo elements ::before and ::after.
+I also learned to style inputs more easily.
+
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I will continue this challenge in order to make it responsive.
 
 ### Useful resources
 
