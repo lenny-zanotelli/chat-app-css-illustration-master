@@ -44,51 +44,52 @@
           <img class="card__discussion-text--img" src="images\dog-image-3.jpg" alt="dog3">
         </p>
         <p class="card__discussion-text--right">Here are a few pictures. She’s a happy girl!</p>
-        <p class="card__discussion-text--right">Can you make it?</p>
+        <p class="card__discussion-text--right--small">Can you make it?</p>
         <p class="card__discussion-text--left">She looks so happy! The time we discussed works. How long shall I take
           her
           out for?</p>
 
-        <!--These are the two input's radio-->
+        <!--Form section-->
 
-        <div class="card__radio">
+        <form class="card__radio">
           <div class="card__radio1">
-            <input class="radio__input" type="radio" name="cardRadio" id="radio-1">
+            <input class="radio__input" type="radio" value="30m" name="cardRadio" id="radio-1">
             <label for="radio-1" class="card__radio1--body">
               <span class="radio__label">30 minute walk</span>
               <span class="radio__price">$29</span>
             </label>
           </div>
-          <div class="card__radio2">
-            <input class="radio__input" type="radio" name="cardRadio" id="radio-2">
-            <label for="radio-2" class="card__radio2--body">
+          <div class="card__radio1">
+            <input class="radio__input" type="radio" value="1h" name="cardRadio" id="radio-2">
+            <label for="radio-2" class="card__radio1--body">
               <span class="radio__label">1 hour walk</span>
               <span class="radio__price">$49</span>
             </label>
           </div>
-        </div>
+        </form>
 
         <!--Text input & submit button-->
 
-        <div class="input-group">
+        <form class="input-group">
           <label for="input-group" class="input-group__label">
             <input class="input-group__input--text" type="text" id="input-group" placeholder="Type a message...">
             <input class="input-group__input--submit" type="submit" value=">">
           </label>
-        </div>
+        </form>
 
       </section>
     </div>
+    <section class="container__description">
+      <h1 class="container__description--title">Simple Booking</h1>
+      <p class="container__description--paragraph">
+        Stay in touch with our dog walkers through the chat interface. This
+        makes it easy to discuss arrangements and
+        make bookings. Once the walk has been completed you can rate walker and book again all through the chat.
+      </p>
+    </section>
   </main>
 
-  <footer class="footer__description">
-    <h1 class="footer__description--title">Simple Booking</h1>
-    <p class="footer__description--paragraph">
-      Stay in touch with our dog walkers through the chat interface. This
-      makes it easy to discuss arrangements and
-      make bookings. Once the walk has been completed you can rate walker and book again all through the chat.
-    </p>
-  </footer>
+
 
 </body>
 
