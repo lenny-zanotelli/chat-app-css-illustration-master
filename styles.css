@@ -324,7 +324,7 @@ body::after {
 
     .container__card {
         flex-direction: column;
-        margin: 2rem 0 5rem 0;
+        margin: 5rem 0 2rem 0;
     }
     
     .container__description {
