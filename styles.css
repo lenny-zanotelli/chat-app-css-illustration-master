@@ -39,13 +39,12 @@ body {
 
 .container__card {
     position: relative;
-    max-width: 18rem;
+    max-width: 18.5rem;
     border: 12px solid var(--white);
     border-radius: 40px;
     box-shadow: 0 20px 25px 5px rgba(0 0 0 / 0.1);
     background-color: var(--white);
-
-    margin: 10rem 0 14rem 25.5rem;
+    margin: 14rem 0 14rem 27.5rem;
 }
 
 /* ==== Top of the phone design ==== */
@@ -282,10 +281,10 @@ body {
 
 .container__description--paragraph {
     color: var(--dark-grayish-violet);
-    font-size: 1rem;
-    line-height: 2;
+    font-size: 1.15em;
+    line-height: 1.8;
     font-weight: 400;
-    width: 78%;
+    width: 32rem;
 }
 
 /* === BACKGROUND WITH TWO RECTANGLE */
@@ -295,10 +294,12 @@ body::before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 33%;
-    height: 90%;
+    width: 680px;
+    height: 950px;
+    margin-left: -10%;
     background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-    border-radius: 50% 50% 51% 47% / 0% 0% 32% 11%;
+    border-bottom-left-radius: 50rem;
+    border-bottom-right-radius: 50rem;
 }
 
 body::after {
@@ -310,7 +311,6 @@ body::after {
     height: 90%;
     background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
     border-radius: 50% 50% 50% 50% / 25% 0% 0% 0%;  
-  
-    opacity: .05;
+    opacity: .02;
 }
  
