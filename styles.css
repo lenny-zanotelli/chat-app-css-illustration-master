@@ -22,7 +22,8 @@
 body {
     font-family: 'Rubik', sans-serif;
     background-color: var(--light-grayish-violet);
-    height: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden;
     position: relative;
 }
 
@@ -38,13 +39,13 @@ body {
 /* === MOBILE PHONE DESIGN ==== */
 
 .container__card {
-    position: relative;
-    max-width: 18.5rem;
+    width: 19rem;
     border: 12px solid var(--white);
     border-radius: 40px;
     box-shadow: 0 20px 25px 5px rgba(0 0 0 / 0.1);
     background-color: var(--white);
-    margin: 14rem 0 14rem 27.5rem;
+    margin: 14rem 0 14rem 25rem;
+    z-index: 1;
 }
 
 /* ==== Top of the phone design ==== */
@@ -254,21 +255,19 @@ body {
     background-color: var(--very-dark-desaturated-violet);
     font-weight: bolder;
     font-size: 1rem;
-
     border: none;
     border-radius: 15px;
-
 }
 
 
-
-/* ==== RIGHT TEXT ON THE DESGIN ==== */
+/* ==== RIGHT TEXT ==== */
 
 .container__description {
     display: flex;
     flex-direction: column;
-    margin-left: 10rem;
+    margin-left: 6rem;
     width: 53%;
+    z-index: 1;
 }
 
 .container__description--title {
@@ -276,7 +275,6 @@ body {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: var(--very-dark-desaturated-violet);
-
 }
 
 .container__description--paragraph {
@@ -287,19 +285,19 @@ body {
     width: 32rem;
 }
 
-/* === BACKGROUND WITH TWO RECTANGLE */
+/* === SHAPE BACKGROUND */
 
-body::before {
-    content: "";
+
+.shape {
     position: absolute;
+    width: 40rem;
+    height: 85vh;
+    background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 0 0 20rem 20rem;
     top: 0;
     left: 0;
-    width: 680px;
-    height: 950px;
-    margin-left: -10%;
-    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-    border-bottom-left-radius: 50rem;
-    border-bottom-right-radius: 50rem;
+    transform: translateX(-9rem);
+    z-index: 0;
 }
 
 body::after {
@@ -312,5 +310,31 @@ body::after {
     background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
     border-radius: 50% 50% 50% 50% / 25% 0% 0% 0%;  
     opacity: .02;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .shape {
+        height: 60vh;
+        transform: translateX(-25rem);
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    .container__card {
+        flex-direction: column;
+        margin: 2rem 0 5rem 0;
+    }
+    
+    .container__description {
+        width: 80%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .container__description--paragraph {
+        font-size: 1rem;
+        width: auto;
+    }
 }
  
