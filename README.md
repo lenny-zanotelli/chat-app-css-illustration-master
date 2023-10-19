@@ -41,10 +41,6 @@ It was my most difficult challenge for me in HTML and CSS.
 I learned a lot about the use of flexboxes, the semantics of HTML tags as well as the pseudo elements ::before and ::after.
 I also learned to style inputs more easily.
 
-### Continued development
-
-I will continue this challenge in order to make it responsive.
-
 ### Useful resources
 
 - [z-index doc](https://developer.mozilla.org/fr/docs/Web/CSS/z-index) - This helped me for doing the background gradient left and right.
